@@ -1,6 +1,6 @@
-/* =======================
-   GENERAL
-======================= */
+/* ===============================
+   GLOBAL RESET & BASE
+================================ */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
@@ -10,285 +10,234 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  background: linear-gradient(to right, #f8f9ff, #eef2ff);
-  color: #111;
-}
-
 p {
-  color: rgb(85, 85, 85);
+  color: #4b5563;
+  line-height: 1.7;
 }
 
-/* =======================
-   TRANSITION
-======================= */
-
-a,
-.btn {
-  transition: all 300ms ease;
-}
-
-/* =======================
-   NAVBAR
-======================= */
-
-nav,
-.nav-links {
-  display: flex;
-}
+/* ===============================
+   NAVIGATION
+================================ */
 
 nav {
-  justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  height: 17vh;
-}
-
-.nav-links {
-  gap: 2rem;
-  list-style: none;
-  font-size: 1.5rem;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #4f46e5;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
+  padding: 1.2rem 6rem;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
+  color: #2563eb;
 }
 
-/* =======================
-   HAMBURGER MENU
-======================= */
-
-#hamburger-nav {
-  display: none;
-}
-
-.hamburger-menu {
-  position: relative;
-}
-
-.hamburger-icon {
+.nav-links {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 24px;
-  width: 30px;
-  cursor: pointer;
+  list-style: none;
+  gap: 2rem;
 }
 
-.hamburger-icon span {
-  width: 100%;
-  height: 2px;
-  background-color: black;
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #1f2937;
 }
 
-.menu-links {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: white;
-  border-radius: 1rem;
-  max-height: 0;
-  overflow: hidden;
+.nav-links a:hover {
+  color: #2563eb;
 }
 
-.menu-links.open {
-  max-height: 300px;
-}
-
-.menu-links a {
-  display: block;
-  padding: 10px;
-  font-size: 1.2rem;
-}
-
-/* =======================
-   SECTIONS (FIXED)
-======================= */
-
-section {
-  padding-top: 4vh;
-  min-height: 96vh;      /* 🔥 CRITICAL FIX */
-  margin: 0 10rem;
-}
-
-.section-container {
-  display: flex;
-  gap: 4rem;
-}
-
-/* =======================
-   PROFILE
-======================= */
+/* ===============================
+   PROFILE / HERO
+================================ */
 
 #profile {
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 5rem;
-  align-items: center;
+  min-height: 90vh;
+  padding: 0 6rem;
 }
 
 .section__pic-container {
-  width: 400px;
-  height: 400px;
+  width: 320px;
+  height: 320px;
 }
 
 .section__pic-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 2rem;
+  border-radius: 50%;
+  border: 5px solid #2563eb;
 }
 
 .section__text {
-  text-align: center;
+  max-width: 500px;
 }
 
-.section__text__p2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+.section__text__p1 {
+  font-weight: 500;
+  color: #2563eb;
 }
 
 .title {
   font-size: 3rem;
+  margin: 0.5rem 0;
 }
 
-#socials-container {
+.section__text__p2 {
+  font-size: 1.4rem;
+  color: #374151;
+  margin-bottom: 1.5rem;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+
+.btn-container {
   display: flex;
-  justify-content: center;
   gap: 1rem;
   margin-top: 1rem;
 }
 
-/* =======================
-   BUTTONS (COLOR FIX)
-======================= */
-
-.btn-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
 .btn {
-  font-weight: 600;
-  padding: 1rem;
-  width: 9rem;
-  border-radius: 2rem;
+  padding: 0.9rem 1.6rem;
+  border-radius: 30px;
+  font-weight: 500;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .btn-color-1 {
-  background: linear-gradient(135deg, #4f46e5, #06b6d4);
+  background: #2563eb;
   color: white;
   border: none;
 }
 
 .btn-color-1:hover {
-  transform: scale(1.05);
+  background: #1e40af;
 }
 
 .btn-color-2 {
-  background: none;
-  border: 2px solid #4f46e5;
-  color: #4f46e5;
+  background: transparent;
+  border: 2px solid #2563eb;
+  color: #2563eb;
 }
 
 .btn-color-2:hover {
-  background: #4f46e5;
+  background: #2563eb;
   color: white;
 }
 
-/* =======================
-   ABOUT / CARDS (UI FIX)
-======================= */
+/* ===============================
+   SOCIAL ICONS
+================================ */
+
+#socials-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.15);
+}
+
+/* ===============================
+   SECTIONS
+================================ */
+
+section {
+  padding: 6rem;
+}
+
+#about,
+#experience,
+#projects,
+#contact {
+  background: #f5f7fb;
+}
+
+.section-container {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* ===============================
+   CARDS (About, Skills, Projects)
+================================ */
 
 .details-container {
-  padding: 1.5rem;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  text-align: center;
   flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: 1px solid rgb(200, 200, 200);
-  text-align: center;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-.about-containers {
-  display: flex;
-  gap: 2rem;
-}
-
-/* =======================
-   EXPERIENCE
-======================= */
-
-.experience-sub-title {
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-}
-
-.article-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
-}
-
-article {
-  width: 10rem;
-  text-align: center;
-}
-
-/* =======================
+/* ===============================
    PROJECTS
-======================= */
+================================ */
 
 .color-container {
-  background: white;
-  border-radius: 2rem;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
 }
 
-/* =======================
+.project-title {
+  margin-bottom: 1rem;
+}
+
+/* ===============================
    CONTACT
-======================= */
+================================ */
 
 #contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 
 .contact-info-upper-container {
   display: flex;
+  justify-content: center;
   gap: 2rem;
-  padding: 1rem 2rem;
-  background: white;
-  border-radius: 2rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  margin-top: 2rem;
 }
 
-/* =======================
+/* ===============================
    FOOTER
-======================= */
+================================ */
 
 footer {
-  padding: 2rem;
+  background: #111827;
+  color: #9ca3af;
   text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
 }
