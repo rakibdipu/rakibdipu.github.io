@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rakib Dipu | Portfolio</title>
@@ -10,212 +10,214 @@
   <link rel="stylesheet" href="css/mediaqueries.css">
 </head>
 
+<body>
 
-  <body>
-    <!-- DESKTOP NAV -->
-    <nav id="desktop-nav">
-      <div class="logo">Rakib Dipu</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- DESKTOP NAV -->
+  <nav id="desktop-nav">
+    <div class="logo">Rakib Dipu</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- HAMBURGER NAV -->
-    <nav id="hamburger-nav">
-      <div class="logo">Rakib Dipu</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span><span></span><span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+  <!-- HAMBURGER NAV -->
+  <nav id="hamburger-nav">
+    <div class="logo">Rakib Dipu</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </nav>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
 
-    <!-- PROFILE -->
-    <section id="profile">
+  <!-- PROFILE -->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="assets/images/profile-pic.png" alt="Rakib Dipu profile picture">
+    </div>
+
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">MD. Rakib Hassan Dipu</h1>
+      <p class="section__text__p2">IoT & Robotics Engineer</p>
+
+      <div class="btn-container">
+        <button class="btn btn-color-2"
+          onclick="window.open('assets/documents/Rakib-Hassan-Dipu-CV.pdf')">
+          Download CV
+        </button>
+
+        <button class="btn btn-color-1"
+          onclick="location.href='#contact'">
+          Contact
+        </button>
+      </div>
+
+      <div id="socials-container">
+        <img
+          src="assets/images/linkedin.png"
+          alt="LinkedIn"
+          class="icon"
+          onclick="location.href='https://linkedin.com/in/rakibhassandipu'"
+        >
+        <img
+          src="assets/images/github.png"
+          alt="GitHub"
+          class="icon"
+          onclick="location.href='https://github.com/rakibdipu'"
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+
+    <div class="section-container">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Rakib Dipu profile picture" />
+        <img src="assets/images/about-pic.png" alt="About picture" class="about-pic">
       </div>
 
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">MD. Rakib Hassan Dipu</h1>
-        <p class="section__text__p2">IoT & Robotics Engineer</p>
-
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/documents/Rakib-Hassan-Dipu-CV.pdf')"
-          >
-            Download CV
-          </button>
-          <button
-            class="btn btn-color-1"
-            onclick="location.href='#contact'"
-          >
-            Contact
-          </button>
-        </div>
-
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn"
-            class="icon"
-            onclick="location.href='https://linkedin.com/in/rakibhassandipu'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="GitHub"
-            class="icon"
-            onclick="location.href='https://github.com/rakibdipu'"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img src="./assets/about-pic.png" alt="About picture" class="about-pic" />
-        </div>
-
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <h3>Focus Area</h3>
-              <p>
-                IoT Systems<br />
-                Embedded Design<br />
-                Edge ML
-              </p>
-            </div>
-
-            <div class="details-container">
-              <h3>Education</h3>
-              <p>
-                BSc in IoT & Robotics Engineering<br />
-                Research-Oriented Curriculum
-              </p>
-            </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h3>Focus Area</h3>
+            <p>
+              IoT Systems<br>
+              Embedded Design<br>
+              Edge ML
+            </p>
           </div>
 
-          <div class="text-container">
+          <div class="details-container">
+            <h3>Education</h3>
             <p>
-              I design and build real-world IoT and embedded systems integrating
-              sensors, microcontrollers, machine learning, and cloud platforms.
-              My work focuses on healthcare automation, environmental monitoring,
-              and intelligent edge devices. I am actively seeking international
-              research, scholarship, and remote engineering opportunities.
+              BSc in IoT & Robotics Engineering<br>
+              Research-Oriented Curriculum
             </p>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- SKILLS -->
-    <section id="experience">
-      <p class="section__text__p1">Technical</p>
-      <h1 class="title">Skills</h1>
-
-      <div class="experience-details-container">
-        <div class="about-containers">
-
-          <div class="details-container">
-            <h2 class="experience-sub-title">Embedded & IoT</h2>
-            <div class="article-container">
-              <article><h3>ESP32 / Arduino</h3></article>
-              <article><h3>MQTT / I2C / SPI</h3></article>
-              <article><h3>Sensor Integration</h3></article>
-              <article><h3>PCB Prototyping</h3></article>
-            </div>
-          </div>
-
-          <div class="details-container">
-            <h2 class="experience-sub-title">Software & ML</h2>
-            <div class="article-container">
-              <article><h3>Python</h3></article>
-              <article><h3>C / C++</h3></article>
-              <article><h3>scikit-learn</h3></article>
-              <article><h3>Git & GitHub</h3></article>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects">
-      <p class="section__text__p1">Featured</p>
-      <h1 class="title">Projects</h1>
-
-      <div class="experience-details-container">
-        <div class="about-containers">
-
-          <div class="details-container color-container">
-            <h2 class="project-title">IoT-Based Patient Monitoring</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn"
-                onclick="location.href='projects.html'">
-                Details
-              </button>
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <h2 class="project-title">Adaptive IoT Environment for Autism</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn"
-                onclick="location.href='projects.html'">
-                Details
-              </button>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact</h1>
-
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
+        <div class="text-container">
           <p>
-            <a href="mailto:rakibdipu007@gmail.com">
-              rakibdipu007@gmail.com
-            </a>
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <p>
-            <a href="https://linkedin.com/in/rakibhassandipu">
-              LinkedIn Profile
-            </a>
+            I design and build real-world IoT and embedded systems integrating
+            sensors, microcontrollers, machine learning, and cloud platforms.
+            My work focuses on healthcare automation, environmental monitoring,
+            and intelligent edge devices. I am actively seeking international
+            research, scholarship, and remote engineering opportunities.
           </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer>
-      <p>© 2025 MD. Rakib Hassan Dipu</p>
-    </footer>
+  <!-- SKILLS -->
+  <section id="experience">
+    <p class="section__text__p1">Technical</p>
+    <h1 class="title">Skills</h1>
 
-    <script src="script.js"></script>
-  </body>
+    <div class="experience-details-container">
+      <div class="about-containers">
+
+        <div class="details-container">
+          <h2 class="experience-sub-title">Embedded & IoT</h2>
+          <div class="article-container">
+            <article><h3>ESP32 / Arduino</h3></article>
+            <article><h3>MQTT / I2C / SPI</h3></article>
+            <article><h3>Sensor Integration</h3></article>
+            <article><h3>PCB Prototyping</h3></article>
+          </div>
+        </div>
+
+        <div class="details-container">
+          <h2 class="experience-sub-title">Software & ML</h2>
+          <div class="article-container">
+            <article><h3>Python</h3></article>
+            <article><h3>C / C++</h3></article>
+            <article><h3>scikit-learn</h3></article>
+            <article><h3>Git & GitHub</h3></article>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <p class="section__text__p1">Featured</p>
+    <h1 class="title">Projects</h1>
+
+    <div class="experience-details-container">
+      <div class="about-containers">
+
+        <div class="details-container color-container">
+          <h2 class="project-title">IoT-Based Patient Monitoring</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='projects.html'">
+              Details
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <h2 class="project-title">Adaptive IoT Environment for Autism</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='projects.html'">
+              Details
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact</h1>
+
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <p>
+          <a href="mailto:rakibdipu007@gmail.com">
+            rakibdipu007@gmail.com
+          </a>
+        </p>
+      </div>
+
+      <div class="contact-info-container">
+        <p>
+          <a href="https://linkedin.com/in/rakibhassandipu">
+            LinkedIn Profile
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 MD. Rakib Hassan Dipu</p>
+  </footer>
+
+  <!-- JS (OPTIONAL) -->
+  <script src="script.js"></script>
+
+</body>
 </html>
