@@ -1,0 +1,165 @@
+/* ================================
+   LARGE SCREENS (<= 1400px)
+================================ */
+
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: auto;
+    margin-bottom: 4rem;
+  }
+
+  .about-containers {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #contact,
+  #projects {
+    height: auto;
+  }
+}
+
+/* ================================
+   TABLET & SMALL LAPTOP (<= 1200px)
+================================ */
+
+@media screen and (max-width: 1200px) {
+  /* Navigation switch */
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  /* Layout stacking */
+  #profile,
+  .section-container {
+    display: block;
+  }
+
+  section {
+    height: auto;
+    margin: 0 5%;
+  }
+
+  /* Remove arrows (UX improvement) */
+  .arrow {
+    display: none;
+  }
+
+  /* Profile image scaling */
+  .section__pic-container {
+    width: 260px;
+    height: 260px;
+    margin: 0 auto 2rem;
+  }
+
+  /* Experience spacing */
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+
+  .about-containers {
+    margin-top: 1rem;
+  }
+}
+
+/* ================================
+   MOBILE DEVICES (<= 600px)
+================================ */
+
+@media screen and (max-width: 600px) {
+  /* Sections */
+  #profile {
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  #contact {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  footer {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  section {
+    margin: 0 1.5rem;
+  }
+
+  /* Typography */
+  .title {
+    font-size: 2rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+
+  .experience-sub-title {
+    font-size: 1.3rem;
+  }
+
+  article {
+    font-size: 1rem;
+  }
+
+  /* Navigation */
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+  }
+
+  .nav-links li a {
+    font-size: 1rem;
+  }
+
+  /* Images */
+  .section__pic-container {
+    width: 80%;
+    height: auto;
+    max-width: 280px;
+    justify-content: center;
+  }
+
+  /* Containers */
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact-info-container {
+    margin: 0.5rem 0;
+  }
+
+  .contact-info-container p {
+    font-size: 1rem;
+  }
+
+  /* Text alignment */
+  .text-container {
+    text-align: justify;
+  }
+
+  /* Buttons */
+  .btn {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  footer nav {
+    margin-bottom: 1.5rem;
+  }
+}
