@@ -1,264 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | MD. Rakib Hassan Dipu</title>
 
-    <meta name="description" content="Engineering projects by MD. Rakib Hassan Dipu featuring IoT, ESP32, embedded systems, machine learning, and healthcare automation.">
-    <meta name="author" content="MD. Rakib Hassan Dipu">
-
-    <title>Projects | MD. Rakib Hassan Dipu</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mediaqueries.css">
-
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mediaqueries.css" />
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">MD. Rakib Hassan Dipu</div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="projects.html" class="active">Projects</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+  <!-- ================= NAV ================= -->
+
+  <nav id="desktop-nav">
+    <div class="logo">Rakib Dipu</div>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#experience">Skills</a></li>
+      <li><a href="#projects" class="active">Projects</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Rakib Dipu</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="menu-links">
+        <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="index.html#experience" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ================= PROJECTS ================= -->
+
+  <section id="projects">
+    <p class="section__text__p1">Engineering Work</p>
+    <h1 class="title">Projects</h1>
+
+    <div class="experience-details-container">
+      <div class="about-containers">
+
+        <!-- PROJECT 1 -->
+        <div class="details-container color-container">
+          <h2 class="project-title">
+            IoT-Based Patient Monitoring System
+          </h2>
+
+          <p style="margin: 1rem 0; color: rgb(85,85,85);">
+            Real-time healthcare monitoring system integrating ESP32,
+            biomedical sensors, MQTT communication, and machine-learning-based
+            early warning alerts.
+          </p>
+
+          <ul style="text-align:left; margin-bottom:1rem;">
+            <li>ESP32 + MAX30102 + DHT sensors</li>
+            <li>MQTT cloud dashboard</li>
+            <li>ML-based anomaly detection</li>
+            <li>Low-cost healthcare automation</li>
+          </ul>
+
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/rakibdipu'"
+            >
+              GitHub
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='#'"
+            >
+              Demo Video
+            </button>
+          </div>
         </div>
-    </nav>
 
-    <!-- ================= PAGE HEADER ================= -->
-    <section class="page-header">
-        <div class="container">
-            <h1>Engineering Projects</h1>
-            <p>
-                Applied research and real-world systems demonstrating embedded hardware design,
-                machine learning integration, and scalable IoT architectures.
-            </p>
+        <!-- PROJECT 2 -->
+        <div class="details-container color-container">
+          <h2 class="project-title">
+            Adaptive IoT Environment for Autism Care
+          </h2>
+
+          <p style="margin: 1rem 0; color: rgb(85,85,85);">
+            Sensor-driven smart environment designed to assist individuals
+            with Autism Spectrum Disorder through adaptive lighting,
+            sound, and environmental feedback.
+          </p>
+
+          <ul style="text-align:left; margin-bottom:1rem;">
+            <li>Environmental & motion sensors</li>
+            <li>Behavior-aware automation logic</li>
+            <li>ESP32-based edge processing</li>
+            <li>Assistive healthcare IoT system</li>
+          </ul>
+
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/rakibdipu'"
+            >
+              GitHub
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='#'"
+            >
+              Demo Video
+            </button>
+          </div>
         </div>
-    </section>
 
-    <!-- ========================================================= -->
-    <!-- PROJECT 1 : IEEE PROJECT -->
-    <!-- ========================================================= -->
-    <section id="project1" class="project-detail">
-        <div class="container">
+        <!-- PROJECT 3 -->
+        <div class="details-container color-container">
+          <h2 class="project-title">
+            Smart Environmental Monitoring System
+          </h2>
 
-            <div class="project-header">
-                <h2>Lightweight IoT-Driven Panic Attack Detection & Caregiver Alert System</h2>
-                <div class="project-meta">
-                    <span class="tag">Healthcare IoT</span>
-                    <span class="tag">ESP32</span>
-                    <span class="tag">Machine Learning</span>
-                    <span class="tag">IEEE RAAICON 2025</span>
-                </div>
-            </div>
+          <p style="margin: 1rem 0; color: rgb(85,85,85);">
+            IoT-based system for monitoring temperature, humidity,
+            and air quality with real-time visualization and alerts.
+          </p>
 
-            <div class="project-content">
+          <ul style="text-align:left; margin-bottom:1rem;">
+            <li>ESP32 + DHT + MQ sensors</li>
+            <li>Cloud dashboard & alerts</li>
+            <li>Scalable IoT architecture</li>
+            <li>Environmental data analytics</li>
+          </ul>
 
-                <div class="problem-statement">
-                    <h3>Problem Statement</h3>
-                    <p>
-                        Individuals with Autism Spectrum Disorder (ASD) and anxiety disorders
-                        often experience sudden panic attacks that require immediate caregiver
-                        intervention. Existing monitoring solutions are either reactive,
-                        rely on manual observation, or are prohibitively expensive for
-                        large-scale deployment in low-resource settings.
-                    </p>
-                </div>
-
-                <div class="solution">
-                    <h3>Solution & Technical Approach</h3>
-                    <p>
-                        I designed a lightweight, low-cost IoT system capable of continuously
-                        monitoring physiological and environmental parameters using an ESP32-based
-                        embedded platform. Sensor data is processed locally and transmitted via
-                        MQTT to a cloud dashboard for real-time visualization and alerting.
-                    </p>
-
-                    <p>
-                        A machine learning pipeline was developed using Python and scikit-learn
-                        to detect early indicators of panic attacks. The trained model was
-                        optimized for deployment on resource-constrained devices, enabling
-                        near-real-time prediction before critical escalation.
-                    </p>
-
-                    <p>
-                        <strong>My Role:</strong> Lead system architect and first author.
-                        Responsible for hardware selection, PCB prototyping, embedded firmware
-                        development, ML model design, data analysis, and system validation.
-                    </p>
-                </div>
-
-                <div class="video-demo">
-                    <h3>System Demonstration</h3>
-                    <div class="video-wrapper">
-                        <iframe
-                            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-                            title="Panic Attack Detection System Demo"
-                            frameborder="0"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <p class="video-caption">
-                        Complete walkthrough covering sensor setup, embedded processing,
-                        live dashboard monitoring, and caregiver alert mechanism.
-                    </p>
-                </div>
-
-                <div class="tech-stack">
-                    <h3>Technology Stack</h3>
-                    <div class="tech-grid">
-                        <div><strong>Hardware:</strong> ESP32, physiological sensors, custom PCB</div>
-                        <div><strong>Firmware:</strong> C++, Arduino framework</div>
-                        <div><strong>ML:</strong> Python, scikit-learn, Random Forest</div>
-                        <div><strong>Communication:</strong> MQTT, Wi-Fi</div>
-                        <div><strong>Backend:</strong> Node-RED, cloud dashboard</div>
-                        <div><strong>Tools:</strong> EasyEDA, Git, VS Code</div>
-                    </div>
-                </div>
-
-                <div class="results">
-                    <h3>Results & Impact</h3>
-                    <ul>
-                        <li>Achieved ~94% prediction accuracy on experimental dataset</li>
-                        <li>Detected panic-attack indicators 3–5 minutes before threshold alarms</li>
-                        <li>System cost under USD $40 per unit</li>
-                        <li>Published at IEEE RAAICON 2025 as first-author paper</li>
-                    </ul>
-                </div>
-
-                <div class="project-links">
-                    <a href="https://github.com/rakibdipu" class="btn btn-primary" target="_blank">
-                        View Code
-                    </a>
-                    <a href="publications.html" class="btn btn-secondary">
-                        View Publication
-                    </a>
-                </div>
-
-            </div>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/rakibdipu'"
+            >
+              GitHub
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='#'"
+            >
+              Demo Video
+            </button>
+          </div>
         </div>
-    </section>
 
-    <!-- ========================================================= -->
-    <!-- PROJECT 2 : AUTISM IoT -->
-    <!-- ========================================================= -->
-    <section id="project2" class="project-detail alt-bg">
-        <div class="container">
+      </div>
+    </div>
+  </section>
 
-            <div class="project-header">
-                <h2>Adaptive IoT Environment for Autism Care</h2>
-                <div class="project-meta">
-                    <span class="tag">Assistive Technology</span>
-                    <span class="tag">IoT</span>
-                    <span class="tag">Sensors</span>
-                </div>
-            </div>
+  <!-- ================= FOOTER ================= -->
 
-            <div class="project-content">
+  <footer>
+    <p>© 2025 MD. Rakib Hassan Dipu</p>
+  </footer>
 
-                <div class="problem-statement">
-                    <h3>Problem Statement</h3>
-                    <p>
-                        Individuals with autism often experience sensory overload due to
-                        uncontrolled environmental conditions such as light, temperature,
-                        and noise, negatively affecting comfort and behavior.
-                    </p>
-                </div>
-
-                <div class="solution">
-                    <h3>Solution & Technical Approach</h3>
-                    <p>
-                        Developed an adaptive IoT-based environment monitoring and control system
-                        that dynamically adjusts environmental parameters using sensor feedback.
-                        The system enables caregivers to monitor conditions remotely and
-                        automate responses based on predefined thresholds.
-                    </p>
-
-                    <p>
-                        <strong>My Role:</strong> System designer and embedded developer.
-                        Responsible for sensor integration, ESP32 firmware, and system testing.
-                    </p>
-                </div>
-
-                <div class="results">
-                    <h3>Results & Impact</h3>
-                    <ul>
-                        <li>Improved environmental stability in controlled test environments</li>
-                        <li>Reduced manual caregiver intervention</li>
-                        <li>Demonstrated feasibility for assistive smart environments</li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================================= -->
-    <!-- PROJECT 3 : HOME AUTOMATION -->
-    <!-- ========================================================= -->
-    <section id="project3" class="project-detail">
-        <div class="container">
-
-            <div class="project-header">
-                <h2>Large-Scale Home Automation System</h2>
-                <div class="project-meta">
-                    <span class="tag">Smart Home</span>
-                    <span class="tag">IoT</span>
-                    <span class="tag">Automation</span>
-                </div>
-            </div>
-
-            <div class="project-content">
-
-                <div class="problem-statement">
-                    <h3>Problem Statement</h3>
-                    <p>
-                        Traditional home automation solutions lack scalability and centralized
-                        monitoring, making them unsuitable for multi-room or multi-device deployments.
-                    </p>
-                </div>
-
-                <div class="solution">
-                    <h3>Solution & Technical Approach</h3>
-                    <p>
-                        Designed a scalable IoT-based home automation architecture enabling
-                        centralized monitoring and control of multiple devices using
-                        distributed ESP32 nodes.
-                    </p>
-
-                    <p>
-                        <strong>My Role:</strong> IoT system designer and integrator.
-                    </p>
-                </div>
-
-                <div class="results">
-                    <h3>Results & Impact</h3>
-                    <ul>
-                        <li>Successfully demonstrated multi-node automation</li>
-                        <li>Low-latency device control</li>
-                        <li>Expandable architecture for future sensors</li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ================= FOOTER ================= -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 MD. Rakib Hassan Dipu. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="https://github.com/rakibdipu" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/rakibhassandipu" target="_blank">LinkedIn</a>
-                <a href="mailto:rakibdipu007@gmail.com">Email</a>
-            </div>
-        </div>
-    </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
