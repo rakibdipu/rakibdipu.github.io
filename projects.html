@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -252,4 +253,260 @@
         </div>
     </footer>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IoT and embedded systems projects featuring ESP32, machine learning, and healthcare automation">
+    <title>Projects | Your Name</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Your Name</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Technical Projects</h1>
+            <p>End-to-end systems demonstrating hardware design, embedded programming, and deployed solutions</p>
+        </div>
+    </section>
+
+    <!-- PROJECT 1 -->
+    <section id="project1" class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <h2>IoT-Based Patient Monitoring System</h2>
+                <div class="project-meta">
+                    <span class="tag">Healthcare Tech</span>
+                    <span class="tag">ESP32</span>
+                    <span class="tag">Machine Learning</span>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <div class="problem-statement">
+                    <h3>Problem Statement</h3>
+                    <p>
+                        Hospital monitoring systems require continuous manual observation, creating staff workload and delayed response to critical patient conditions. Existing commercial solutions are prohibitively expensive for resource-limited healthcare facilities.
+                    </p>
+                </div>
+
+                <div class="solution">
+                    <h3>Solution & Technical Approach</h3>
+                    <p>
+                        Designed and deployed a low-cost IoT monitoring system integrating MAX30102 pulse oximeter and DHT22 sensors with ESP32 microcontroller. The system continuously tracks heart rate, SpO2, and body temperature, transmitting data via MQTT to a cloud dashboard for real-time visualization.
+                    </p>
+                    <p>
+                        Implemented predictive anomaly detection using a Random Forest classifier trained on 5,000+ patient data points, achieving 94% accuracy in identifying critical health events 3-5 minutes before conventional alarms.
+                    </p>
+                    <p><strong>My Role:</strong> End-to-end system architect. Designed PCB layout, developed firmware in C++, built ML pipeline in Python, and deployed dashboard using Node-RED.</p>
+                </div>
+
+                <div class="video-demo">
+                    <h3>System Demonstration</h3>
+                    <div class="video-wrapper">
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+                            title="Patient Monitoring System Demo" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p class="video-caption">Full system walkthrough: hardware setup, sensor calibration, real-time monitoring, and alert mechanisms</p>
+                </div>
+
+                <div class="tech-stack">
+                    <h3>Technology Stack</h3>
+                    <div class="tech-grid">
+                        <div><strong>Hardware:</strong> ESP32-WROOM-32, MAX30102, DHT22, custom PCB</div>
+                        <div><strong>Firmware:</strong> C++, Arduino framework, WiFi/MQTT libraries</div>
+                        <div><strong>ML Pipeline:</strong> Python, scikit-learn, pandas, matplotlib</div>
+                        <div><strong>Backend:</strong> MQTT broker (Mosquitto), Node-RED</div>
+                        <div><strong>Visualization:</strong> Grafana dashboard, real-time charts</div>
+                        <div><strong>Tools:</strong> KiCad (PCB design), Git, VS Code</div>
+                    </div>
+                </div>
+
+                <div class="results">
+                    <h3>Results & Impact</h3>
+                    <ul>
+                        <li>Deployed in university medical center for 30-day pilot study</li>
+                        <li>Reduced false alarm rate by 68% compared to threshold-based systems</li>
+                        <li>System cost: $35 per unit vs. $800+ for commercial alternatives</li>
+                        <li>Average latency: 1.2 seconds from sensor reading to dashboard update</li>
+                        <li>Published findings in IEEE RAAICON 2025 conference</li>
+                    </ul>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/yourusername/patient-monitoring" target="_blank" class="btn btn-primary">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                        View Code
+                    </a>
+                    <a href="publications.html" class="btn btn-secondary">Related Publication</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT 2 -->
+    <section id="project2" class="project-detail alt-bg">
+        <div class="container">
+            <div class="project-header">
+                <h2>Smart Agriculture Monitoring Network</h2>
+                <div class="project-meta">
+                    <span class="tag">IoT</span>
+                    <span class="tag">Environmental Sensing</span>
+                    <span class="tag">Data Analytics</span>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <div class="problem-statement">
+                    <h3>Problem Statement</h3>
+                    <p>
+                        [Replace with your actual problem statement. Example: Traditional irrigation wastes 40% of water due to lack of soil moisture feedback and weather integration.]
+                    </p>
+                </div>
+
+                <div class="solution">
+                    <h3>Solution & Technical Approach</h3>
+                    <p>
+                        [Replace with your technical solution. Focus on: What did you build? What sensors/actuators? What protocols? How does data flow?]
+                    </p>
+                    <p><strong>My Role:</strong> [Specify your responsibilities]</p>
+                </div>
+
+                <div class="video-demo">
+                    <h3>System Demonstration</h3>
+                    <div class="video-wrapper">
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" 
+                            title="Agriculture System Demo" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="tech-stack">
+                    <h3>Technology Stack</h3>
+                    <div class="tech-grid">
+                        <div><strong>Hardware:</strong> [Your components]</div>
+                        <div><strong>Firmware:</strong> [Your programming stack]</div>
+                        <div><strong>Communication:</strong> [Protocols used]</div>
+                        <div><strong>Backend:</strong> [Server/cloud infrastructure]</div>
+                    </div>
+                </div>
+
+                <div class="results">
+                    <h3>Results & Impact</h3>
+                    <ul>
+                        <li>[Quantified outcome 1]</li>
+                        <li>[Quantified outcome 2]</li>
+                        <li>[Deployment context or user feedback]</li>
+                    </ul>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/yourusername/project2" target="_blank" class="btn btn-primary">View Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT 3 -->
+    <section id="project3" class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <h2>Autonomous Line Following Robot</h2>
+                <div class="project-meta">
+                    <span class="tag">Robotics</span>
+                    <span class="tag">Control Systems</span>
+                    <span class="tag">Embedded</span>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <div class="problem-statement">
+                    <h3>Problem Statement</h3>
+                    <p>[Your problem statement]</p>
+                </div>
+
+                <div class="solution">
+                    <h3>Solution & Technical Approach</h3>
+                    <p>[Your solution]</p>
+                    <p><strong>My Role:</strong> [Your role]</p>
+                </div>
+
+                <div class="video-demo">
+                    <h3>System Demonstration</h3>
+                    <div class="video-wrapper">
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/YOUR_VIDEO_ID_3" 
+                            title="Robot Demo" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="tech-stack">
+                    <h3>Technology Stack</h3>
+                    <div class="tech-grid">
+                        <div><strong>Hardware:</strong> [Components]</div>
+                        <div><strong>Control:</strong> [Algorithm/approach]</div>
+                        <div><strong>Software:</strong> [Programming]</div>
+                    </div>
+                </div>
+
+                <div class="results">
+                    <h3>Results & Impact</h3>
+                    <ul>
+                        <li>[Outcome 1]</li>
+                        <li>[Outcome 2]</li>
+                    </ul>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/yourusername/project3" target="_blank" class="btn btn-primary">View Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                <a href="mailto:your.email@example.com">Email</a>
+            </div>
+        </div>
+    </footer>
+</body>
+>>>>>>> e7104712512439ae28df47d2519001dfe4c4683d
 </html>
