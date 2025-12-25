@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IEEE conference publications and research contributions in IoT and healthcare automation">
+    <title>Publications | Your Name</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Your Name</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="publications.html" class="active">Publications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Publications</h1>
+            <p>Peer-reviewed research contributions to IEEE conferences and technical journals</p>
+        </div>
+    </section>
+
+    <section class="publications">
+        <div class="container">
+            
+            <!-- Publication Entry -->
+            <article class="publication-card">
+                <div class="publication-header">
+                    <h2>IoT-Based Real-Time Patient Monitoring System with Predictive Analytics</h2>
+                    <div class="publication-meta">
+                        <span class="conference">IEEE RAAICON 2025</span>
+                        <span class="date">March 2025</span>
+                        <span class="type">Conference Paper</span>
+                    </div>
+                </div>
+
+                <div class="publication-authors">
+                    <strong>Your Name</strong>, Co-Author Name, Supervisor Name
+                </div>
+
+                <div class="publication-abstract">
+                    <h3>Abstract</h3>
+                    <p>
+                        This paper presents a cost-effective IoT-based patient monitoring system designed for resource-limited healthcare facilities. The system integrates ESP32 microcontroller with MAX30102 and DHT22 sensors to continuously monitor heart rate, blood oxygen saturation, and body temperature. Data is transmitted via MQTT protocol to a cloud-based dashboard for real-time visualization. We implemented a Random Forest machine learning model achieving 94% accuracy in predicting critical health events 3-5 minutes before conventional threshold-based alarms. The complete system costs $35 per unit and demonstrates scalability for multi-patient monitoring networks.
+                    </p>
+                </div>
+
+                <div class="publication-keywords">
+                    <strong>Keywords:</strong> Internet of Things, Healthcare Automation, ESP32, Machine Learning, MQTT, Patient Monitoring
+                </div>
+
+                <div class="publication-details">
+                    <div class="detail-item">
+                        <strong>Conference:</strong> IEEE International Conference on Recent Advances in Automation and Industrial Control (RAAICON 2025)
+                    </div>
+                    <div class="detail-item">
+                        <strong>Location:</strong> Virtual Conference
+                    </div>
+                    <div class="detail-item">
+                        <strong>DOI:</strong> 10.1109/RAAICON.2025.XXXXXX (example format)
+                    </div>
+                </div>
+
+                <div class="publication-video">
+                    <h3>Project Demonstration</h3>
+                    <div class="video-wrapper">
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+                            title="Patient Monitoring System - IEEE Paper Demo" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p class="video-caption">Video demonstration of the complete system implementation described in the publication</p>
+                </div>
+
+                <div class="publication-links">
+                    <a href="assets/documents/ieee-paper.pdf" target="_blank" class="btn btn-primary">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+                        Download PDF
+                    </a>
+                    <a href="projects.html#project1" class="btn btn-secondary">View Related Project</a>
+                    <a href="https://github.com/yourusername/patient-monitoring" target="_blank" class="btn btn-secondary">View Code</a>
+                </div>
+            </article>
+
+            <!-- Template for additional publications -->
+            <article class="publication-card">
+                <div class="publication-header">
+                    <h2>Paper Title Here</h2>
+                    <div class="publication-meta">
+                        <span class="conference">Conference/Journal Name</span>
+                        <span class="date">Publication Date</span>
+                        <span class="type">Type</span>
+                    </div>
+                </div>
+
+                <div class="publication-authors">
+                    Author list
+                </div>
+
+                <div class="publication-abstract">
+                    <h3>Abstract</h3>
+                    <p>Abstract text here...</p>
+                </div>
+
+                <div class="publication-links">
+                    <a href="#" class="btn btn-primary">Download PDF</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="research-interests">
+        <div class="container">
+            <h2>Research Interests</h2>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <h3>Healthcare IoT</h3>
+                    <p>Low-cost monitoring systems, predictive health analytics, telemedicine infrastructure</p>
+                </div>
+                <div class="interest-item">
+                    <h3>Edge Computing</h3>
+                    <p>On-device machine learning, real-time inference, resource-constrained ML deployment</p>
+                </div>
+                <div class="interest-item">
+                    <h3>Embedded AI</h3>
+                    <p>TinyML, neural network optimization, sensor fusion algorithms</p>
+                </div>
+                <div class="interest-item">
+                    <h3>Automation Systems</h3>
+                    <p>Industrial IoT, environmental monitoring, smart infrastructure</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                <a href="mailto:your.email@example.com">Email</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
