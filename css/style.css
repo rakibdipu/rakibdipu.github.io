@@ -1,11 +1,9 @@
-/* =====================================================
-   GOOGLE FONT
-   ===================================================== */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/* =======================
+   GENERAL
+======================= */
 
-/* =====================================================
-   RESET & GLOBAL
-   ===================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -18,92 +16,64 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #ffffff;
-  color: #1f2937;
-  line-height: 1.7;
+  background: linear-gradient(to right, #f8f9ff, #eef2ff);
+  color: #111;
 }
 
 p {
-  color: #4b5563;
-  font-size: 0.95rem;
+  color: rgb(85, 85, 85);
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-
-section {
-  padding: 5rem 0;
-}
-
-/* =====================================================
-   LINKS & TRANSITION
-   ===================================================== */
-a {
-  text-decoration: none;
-  color: inherit;
-}
+/* =======================
+   TRANSITION
+======================= */
 
 a,
 .btn {
   transition: all 300ms ease;
 }
 
-/* =====================================================
-   NAVIGATION (DESKTOP)
-   ===================================================== */
-nav {
+/* =======================
+   NAVBAR
+======================= */
+
+nav,
+.nav-links {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 90px;
-  position: sticky;
-  top: 0;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(6px);
-  border-bottom: 1px solid #e5e7eb;
-  z-index: 1000;
 }
 
-.nav-brand {
-  font-size: 1.4rem;
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4f46e5;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+
+.logo {
+  font-size: 2rem;
   font-weight: 600;
 }
 
-.nav-menu {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-}
-
-.nav-menu a {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #374151;
-  position: relative;
-}
-
-.nav-menu a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 0%;
-  height: 2px;
-  background-color: #111827;
-  transition: width 0.3s ease;
-}
-
-.nav-menu a:hover::after,
-.nav-menu a.active::after {
-  width: 100%;
-}
-
-/* =====================================================
+/* =======================
    HAMBURGER MENU
-   ===================================================== */
+======================= */
+
 #hamburger-nav {
   display: none;
 }
@@ -116,282 +86,209 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 22px;
-  width: 28px;
+  height: 24px;
+  width: 30px;
   cursor: pointer;
 }
 
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: #111827;
-  transition: all 0.3s ease-in-out;
+  background-color: black;
 }
 
 .menu-links {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: #ffffff;
-  width: 200px;
-  border: 1px solid #e5e7eb;
-  border-radius: 0.75rem;
-  overflow: hidden;
+  background-color: white;
+  border-radius: 1rem;
   max-height: 0;
-  transition: max-height 0.3s ease-in-out;
-}
-
-.menu-links li {
-  list-style: none;
-}
-
-.menu-links a {
-  display: block;
-  padding: 1rem;
-  text-align: center;
-  font-size: 1rem;
+  overflow: hidden;
 }
 
 .menu-links.open {
   max-height: 300px;
 }
 
-.hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate(5px, 5px);
+.menu-links a {
+  display: block;
+  padding: 10px;
+  font-size: 1.2rem;
 }
 
-.hamburger-icon.open span:nth-child(2) {
-  opacity: 0;
+/* =======================
+   SECTIONS (FIXED)
+======================= */
+
+section {
+  padding-top: 4vh;
+  min-height: 96vh;      /* 🔥 CRITICAL FIX */
+  margin: 0 10rem;
 }
 
-.hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-
-/* =====================================================
-   HERO SECTION
-   ===================================================== */
-.hero {
-  padding-top: 6rem;
-  padding-bottom: 4rem;
-}
-
-.hero-content {
-  max-width: 700px;
-}
-
-.hero h1 {
-  font-size: 2.7rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.hero-subtitle {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #374151;
-  margin-bottom: 1rem;
-}
-
-.hero-description {
-  margin-bottom: 2rem;
-}
-
-.hero-cta {
+.section-container {
   display: flex;
-  gap: 1rem;
+  gap: 4rem;
 }
 
-/* =====================================================
-   BUTTONS
-   ===================================================== */
-.btn {
-  padding: 0.75rem 1.8rem;
-  border-radius: 2rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-  border: 1px solid #111827;
-}
+/* =======================
+   PROFILE
+======================= */
 
-.btn-primary {
-  background-color: #111827;
-  color: #ffffff;
-}
-
-.btn-primary:hover {
-  background-color: #000000;
-}
-
-.btn-secondary {
-  background: none;
-  color: #111827;
-}
-
-.btn-secondary:hover {
-  background-color: #111827;
-  color: #ffffff;
-}
-
-/* =====================================================
-   HEADINGS
-   ===================================================== */
-h2 {
-  font-size: 2.1rem;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-h3 {
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
-}
-
-/* =====================================================
-   ABOUT & GRID CARDS
-   ===================================================== */
-.about-text {
-  max-width: 800px;
-}
-
-.about-text p {
-  margin-bottom: 1.2rem;
-}
-
-.expertise {
-  margin-top: 4rem;
-}
-
-.expertise-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-}
-
-.expertise-card {
-  border: 1px solid #e5e7eb;
-  border-radius: 1.5rem;
-  padding: 1.8rem;
-  text-align: center;
-}
-
-.expertise-card h4 {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-/* =====================================================
-   PROJECTS / PUBLICATIONS CARDS
-   ===================================================== */
-.project-card,
-.publication-card,
-.interest-item {
-  border: 1px solid #e5e7eb;
-  border-radius: 1.5rem;
-  padding: 2rem;
-}
-
-.projects-preview {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
-
-/* =====================================================
-   PROJECT DETAIL
-   ===================================================== */
-.project-meta {
+#profile {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.tag {
-  border: 1px solid #111827;
-  border-radius: 2rem;
-  padding: 0.3rem 0.9rem;
-  font-size: 0.7rem;
-  font-weight: 600;
-}
-
-.problem-statement,
-.solution,
-.results {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  border-radius: 1.5rem;
-  border: 1px solid #e5e7eb;
-}
-
-/* =====================================================
-   VIDEO
-   ===================================================== */
-.video-wrapper {
-  margin-top: 1.5rem;
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  border-radius: 1.5rem;
-}
-
-.video-wrapper iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-/* =====================================================
-   FOOTER
-   ===================================================== */
-footer {
-  border-top: 1px solid #e5e7eb;
-  padding: 3rem 0;
-  margin-top: 4rem;
-}
-
-footer .container {
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 5rem;
   align-items: center;
 }
 
-.footer-links {
-  display: flex;
-  gap: 1.5rem;
+.section__pic-container {
+  width: 400px;
+  height: 400px;
 }
 
-/* =====================================================
-   RESPONSIVE
-   ===================================================== */
-@media (max-width: 768px) {
-  nav {
-    padding: 0 1.5rem;
-  }
+.section__pic-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
 
-  .nav-menu {
-    display: none;
-  }
+.section__text {
+  text-align: center;
+}
 
-  #hamburger-nav {
-    display: block;
-  }
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
 
-  .hero h1 {
-    font-size: 2.1rem;
-  }
+.title {
+  font-size: 3rem;
+}
 
-  .hero-cta {
-    flex-direction: column;
-  }
+#socials-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
 
-  .btn {
-    width: 100%;
-    text-align: center;
-  }
+/* =======================
+   BUTTONS (COLOR FIX)
+======================= */
 
-  footer .container {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  padding: 1rem;
+  width: 9rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.btn-color-1 {
+  background: linear-gradient(135deg, #4f46e5, #06b6d4);
+  color: white;
+  border: none;
+}
+
+.btn-color-1:hover {
+  transform: scale(1.05);
+}
+
+.btn-color-2 {
+  background: none;
+  border: 2px solid #4f46e5;
+  color: #4f46e5;
+}
+
+.btn-color-2:hover {
+  background: #4f46e5;
+  color: white;
+}
+
+/* =======================
+   ABOUT / CARDS (UI FIX)
+======================= */
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: 1px solid rgb(200, 200, 200);
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.about-containers {
+  display: flex;
+  gap: 2rem;
+}
+
+/* =======================
+   EXPERIENCE
+======================= */
+
+.experience-sub-title {
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+article {
+  width: 10rem;
+  text-align: center;
+}
+
+/* =======================
+   PROJECTS
+======================= */
+
+.color-container {
+  background: white;
+  border-radius: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* =======================
+   CONTACT
+======================= */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  background: white;
+  border-radius: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* =======================
+   FOOTER
+======================= */
+
+footer {
+  padding: 2rem;
+  text-align: center;
 }
