@@ -1,209 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications | MD. Rakib Hassan Dipu</title>
 
-    <meta name="description" content="IEEE conference publications and applied research by MD. Rakib Hassan Dipu in IoT, embedded systems, and healthcare automation.">
-    <meta name="author" content="MD. Rakib Hassan Dipu">
-
-    <title>Publications | MD. Rakib Hassan Dipu</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mediaqueries.css">
-
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mediaqueries.css" />
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">MD. Rakib Hassan Dipu</div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="publications.html" class="active">Publications</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+  <!-- ================= NAV ================= -->
+
+  <nav id="desktop-nav">
+    <div class="logo">Rakib Dipu</div>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#experience">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="#publications" class="active">Publications</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Rakib Dipu</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="menu-links">
+        <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="index.html#experience" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#publications" onclick="toggleMenu()">Publications</a></li>
+        <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ================= PUBLICATIONS ================= -->
+
+  <section id="publications">
+    <p class="section__text__p1">Research Work</p>
+    <h1 class="title">Publications</h1>
+
+    <div class="experience-details-container">
+      <div class="about-containers">
+
+        <!-- PUBLICATION 1 -->
+        <div class="details-container">
+          <h2 class="experience-sub-title">
+            IoT-Based Real-Time Patient Monitoring System with Predictive Analytics
+          </h2>
+
+          <p style="margin: 0.8rem 0; font-weight: 500;">
+            <strong>MD. Rakib Hassan Dipu</strong>, Co-authors  
+          </p>
+
+          <p style="margin-bottom: 0.8rem;">
+            <em>
+              IEEE International Conference on Recent Advances in Automation
+              and Industrial Control (RAAICON)
+            </em>
+          </p>
+
+          <p style="margin-bottom: 1rem; color: rgb(85,85,85);">
+            This research presents a low-cost IoT-based healthcare monitoring
+            system integrating ESP32, biomedical sensors, and machine learning
+            models for early detection of critical patient conditions.
+            The system demonstrates improved response time and reduced
+            false alarms compared to traditional threshold-based monitoring.
+          </p>
+
+          <ul style="text-align:left; margin-bottom:1rem;">
+            <li>ESP32-based biomedical sensing</li>
+            <li>MQTT cloud communication</li>
+            <li>Machine learning anomaly detection</li>
+            <li>Healthcare IoT automation</li>
+          </ul>
+
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('assets/documents/Rakib-Hassan-Dipu-IEEE-Paper.pdf')"
+            >
+              Download Paper
+            </button>
+
+            <button
+              class="btn btn-color-2"
+              onclick="location.href='projects.html'"
+            >
+              Related Project
+            </button>
+          </div>
         </div>
-    </nav>
 
-    <!-- ================= PAGE HEADER ================= -->
-    <section class="page-header">
-        <div class="container">
-            <h1>Publications & Research</h1>
-            <p>
-                Peer-reviewed research contributions focused on healthcare IoT,
-                embedded intelligence, and low-cost automation systems.
-            </p>
+        <!-- FUTURE PUBLICATION PLACEHOLDER -->
+        <div class="details-container">
+          <h2 class="experience-sub-title">
+            Future Research Work
+          </h2>
+
+          <p style="color: rgb(85,85,85); margin-top:1rem;">
+            Actively working on research topics related to:
+          </p>
+
+          <ul style="text-align:left; margin-top:1rem;">
+            <li>Edge AI for Healthcare Systems</li>
+            <li>Smart Environmental Monitoring</li>
+            <li>Low-power Embedded Machine Learning</li>
+            <li>Assistive IoT Technologies</li>
+          </ul>
         </div>
-    </section>
 
-    <!-- ================= PUBLICATIONS ================= -->
-    <section class="publications">
-        <div class="container">
+      </div>
+    </div>
+  </section>
 
-            <!-- ================= IEEE PAPER ================= -->
-            <article class="publication-card">
+  <!-- ================= FOOTER ================= -->
 
-                <div class="publication-header">
-                    <h2>
-                        Lightweight IoT-Driven Panic Attack Detection and
-                        Caregiver Alert System for Autism Spectrum Disorder
-                    </h2>
+  <footer>
+    <p>© 2025 MD. Rakib Hassan Dipu</p>
+  </footer>
 
-                    <div class="publication-meta">
-                        <span class="conference">IEEE RAAICON 2025</span>
-                        <span class="date">November 2025</span>
-                        <span class="type">Conference Paper</span>
-                    </div>
-                </div>
-
-                <div class="publication-authors">
-                    <strong>MD. Rakib Hassan Dipu</strong>, Co-authors
-                </div>
-
-                <div class="publication-abstract">
-                    <h3>Abstract</h3>
-                    <p>
-                        This paper presents a lightweight, cost-effective IoT-driven system
-                        for early detection of panic attacks and automated caregiver alerting
-                        in individuals with Autism Spectrum Disorder (ASD). The proposed system
-                        integrates an ESP32-based embedded platform with physiological and
-                        environmental sensors to enable continuous real-time monitoring.
-                    </p>
-                    <p>
-                        Sensor data is transmitted using the MQTT protocol to a cloud-connected
-                        dashboard for visualization and alert management. A machine learning
-                        pipeline based on Random Forest classification was developed to predict
-                        panic-attack indicators, achieving approximately 94% accuracy and
-                        enabling detection 3–5 minutes before conventional threshold-based
-                        alarms. The complete system was designed with a per-unit cost under
-                        USD $40, making it suitable for deployment in resource-constrained
-                        environments.
-                    </p>
-                </div>
-
-                <div class="publication-keywords">
-                    <strong>Keywords:</strong>
-                    Internet of Things, Healthcare Automation, Autism Care,
-                    ESP32, Machine Learning, MQTT, Embedded Systems
-                </div>
-
-                <div class="publication-details">
-                    <div class="detail-item">
-                        <strong>Conference:</strong>
-                        4th IEEE International Conference on Robotics,
-                        Automation, Artificial Intelligence, and Internet-of-Things (RAAICON 2025)
-                    </div>
-                    <div class="detail-item">
-                        <strong>Location:</strong>
-                        Military Institute of Science and Technology (MIST), Dhaka, Bangladesh
-                    </div>
-                    <div class="detail-item">
-                        <strong>Publication Type:</strong>
-                        Peer-reviewed IEEE Conference Paper
-                    </div>
-                </div>
-
-                <div class="publication-video">
-                    <h3>Project Demonstration Video</h3>
-                    <div class="video-wrapper">
-                        <iframe
-                            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-                            title="IEEE Project Demonstration – Panic Attack Detection System"
-                            frameborder="0"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <p class="video-caption">
-                        Demonstration of the complete system architecture,
-                        sensor integration, real-time monitoring, and
-                        caregiver alert workflow described in the paper.
-                    </p>
-                </div>
-
-                <div class="publication-links">
-                    <a href="assets/documents/Rakib%20Hassan%20Dipu.pdf"
-                       target="_blank"
-                       class="btn btn-primary">
-                        Download PDF
-                    </a>
-
-                    <a href="projects.html#project1"
-                       class="btn btn-secondary">
-                        View Related Project
-                    </a>
-
-                    <a href="https://github.com/rakibdipu"
-                       target="_blank"
-                       class="btn btn-secondary">
-                        View Code
-                    </a>
-                </div>
-
-            </article>
-
-        </div>
-    </section>
-
-    <!-- ================= RESEARCH INTERESTS ================= -->
-    <section class="research-interests">
-        <div class="container">
-            <h2>Research Interests</h2>
-
-            <div class="interests-grid">
-                <div class="interest-item">
-                    <h3>Healthcare IoT</h3>
-                    <p>
-                        Low-cost patient monitoring systems,
-                        predictive health analytics,
-                        assistive healthcare technologies
-                    </p>
-                </div>
-
-                <div class="interest-item">
-                    <h3>Edge & Embedded Intelligence</h3>
-                    <p>
-                        Edge-level machine learning,
-                        TinyML, real-time inference on
-                        resource-constrained devices
-                    </p>
-                </div>
-
-                <div class="interest-item">
-                    <h3>Assistive & Inclusive Technologies</h3>
-                    <p>
-                        Autism care systems,
-                        panic-attack detection,
-                        caregiver support technologies
-                    </p>
-                </div>
-
-                <div class="interest-item">
-                    <h3>Automation & Smart Systems</h3>
-                    <p>
-                        Industrial IoT,
-                        environmental monitoring,
-                        intelligent automation architectures
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ================= FOOTER ================= -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 MD. Rakib Hassan Dipu. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="https://github.com/rakibdipu" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/rakibhassandipu" target="_blank">LinkedIn</a>
-                <a href="mailto:rakibdipu007@gmail.com">Email</a>
-            </div>
-        </div>
-    </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
