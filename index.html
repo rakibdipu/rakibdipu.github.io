@@ -1,241 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- SEO META -->
-    <meta name="description" content="MD. Rakib Hassan Dipu is an IoT and Robotics Engineering student specializing in embedded systems, machine learning, healthcare automation, and ESP32-based intelligent systems.">
-    <meta name="keywords" content="IoT Engineer, Robotics, Embedded Systems, ESP32, Machine Learning, Healthcare IoT, IEEE Research">
-    <meta name="author" content="MD. Rakib Hassan Dipu">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MD. Rakib Hassan Dipu | IoT & Robotics Engineer</title>
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
 
-<body>
-
-    <!-- ================= NAVBAR ================= -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                MD. Rakib Hassan Dipu
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+  <body>
+    <!-- DESKTOP NAV -->
+    <nav id="desktop-nav">
+      <div class="logo">Rakib Dipu</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
 
-    <!-- ================= HERO SECTION ================= -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-
-                <h1>
-                    Designing Intelligent Embedded Systems<br>
-                    for Real-World Impact
-                </h1>
-
-                <p class="hero-subtitle">
-                    IoT & Robotics Engineering Student • IEEE Published Researcher •
-                    Embedded Systems & Machine Learning Practitioner
-                </p>
-
-                <p class="hero-description">
-                    I work at the intersection of embedded hardware, intelligent software,
-                    and real-world deployment. My focus lies in designing ESP32-based IoT systems,
-                    integrating machine learning for decision-making, and building
-                    healthcare-oriented automation solutions that are reliable, scalable,
-                    and cost-effective.
-                </p>
-
-                <p class="hero-description">
-                    From circuit-level design and sensor integration to edge-ML deployment
-                    and cloud-connected monitoring dashboards, I handle the complete
-                    engineering lifecycle of intelligent systems.
-                </p>
-
-                <div class="hero-cta">
-                    <a href="projects.html" class="btn btn-primary">
-                        View Engineering Projects
-                    </a>
-                    <a href="contact.html" class="btn btn-secondary">
-                        Contact Me
-                    </a>
-                </div>
-
-            </div>
+    <!-- HAMBURGER NAV -->
+    <nav id="hamburger-nav">
+      <div class="logo">Rakib Dipu</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PROFILE -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Rakib Dipu profile picture" />
+      </div>
+
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">MD. Rakib Hassan Dipu</h1>
+        <p class="section__text__p2">IoT & Robotics Engineer</p>
+
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/documents/Rakib-Hassan-Dipu-CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="location.href='#contact'"
+          >
+            Contact
+          </button>
+        </div>
+
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/rakibhassandipu'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="GitHub"
+            class="icon"
+            onclick="location.href='https://github.com/rakibdipu'"
+          />
+        </div>
+      </div>
     </section>
 
-    <!-- ================= ABOUT SECTION ================= -->
-    <section id="about" class="about">
-        <div class="container">
+    <!-- ABOUT -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
 
-            <h2>About Me</h2>
-
-            <div class="about-content">
-                <div class="about-text">
-
-                    <p>
-                        I am an IoT and Robotics Engineering student with strong hands-on
-                        experience in designing embedded systems that address
-                        real-world challenges in healthcare monitoring, assistive technologies,
-                        environmental sensing, and smart automation.
-                    </p>
-
-                    <p>
-                        My engineering philosophy emphasizes system reliability,
-                        measurable performance, and deployment-readiness rather than
-                        proof-of-concept prototypes. I actively focus on building systems
-                        that can operate under real constraints such as limited power,
-                        low-cost hardware, noisy sensor data, and unstable network conditions.
-                    </p>
-
-                    <p>
-                        Technically, my work spans the full stack of IoT and embedded system
-                        development — starting from schematic design and PCB prototyping,
-                        moving through embedded firmware development on ESP32 microcontrollers,
-                        integrating digital and analog sensors, implementing MQTT-based
-                        communication pipelines, and deploying machine learning models
-                        for edge-level intelligence.
-                    </p>
-
-                    <p>
-                        I have authored and presented peer-reviewed research at IEEE
-                        conferences, demonstrating my ability to conduct applied research,
-                        analyze experimental data, and translate academic concepts into
-                        working engineering systems.
-                    </p>
-
-                    <p>
-                        I am currently seeking international research opportunities,
-                        scholarships, and remote engineering roles where I can contribute
-                        to technically challenging projects with meaningful social impact.
-                    </p>
-
-                </div>
-            </div>
-
-            <!-- ================= EXPERTISE ================= -->
-            <div class="expertise">
-                <h3>Core Technical Expertise</h3>
-
-                <div class="expertise-grid">
-
-                    <div class="expertise-card">
-                        <h4>Embedded Systems & IoT</h4>
-                        <p>
-                            ESP32 microcontrollers, Arduino framework, sensor interfacing,
-                            I2C / SPI / UART protocols, MQTT communication,
-                            low-power system design, custom PCB prototyping.
-                        </p>
-                    </div>
-
-                    <div class="expertise-card">
-                        <h4>Machine Learning & Data Processing</h4>
-                        <p>
-                            Python-based ML pipelines, scikit-learn, TensorFlow,
-                            edge-ML deployment, anomaly detection,
-                            data preprocessing and performance evaluation.
-                        </p>
-                    </div>
-
-                    <div class="expertise-card">
-                        <h4>Software & System Integration</h4>
-                        <p>
-                            Python, C/C++, REST & MQTT data pipelines,
-                            cloud-connected dashboards, Git-based version control,
-                            modular system architecture.
-                        </p>
-                    </div>
-
-                    <div class="expertise-card">
-                        <h4>Healthcare & Assistive Technologies</h4>
-                        <p>
-                            Patient monitoring systems, panic-attack detection,
-                            autism assistive environments, real-time alerting systems,
-                            caregiver support technologies.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/about-pic.png" alt="About picture" class="about-pic" />
         </div>
-    </section>
 
-    <!-- ================= FEATURED PROJECTS ================= -->
-    <section class="featured-work">
-        <div class="container">
-
-            <h2>Featured Engineering Projects</h2>
-
-            <p class="section-intro">
-                A selection of representative projects demonstrating applied research,
-                hardware-software integration, and real-world system deployment.
-            </p>
-
-            <div class="projects-preview">
-
-                <div class="project-card">
-                    <h3>Lightweight IoT-Driven Panic Attack Detection System</h3>
-                    <p>
-                        IEEE-published healthcare IoT system integrating ESP32-based sensing
-                        and machine learning for early panic-attack detection and
-                        caregiver alerting.
-                    </p>
-                    <a href="projects.html#project1" class="link-arrow">
-                        View full project →
-                    </a>
-                </div>
-
-                <div class="project-card">
-                    <h3>Adaptive IoT Environment for Autism Care</h3>
-                    <p>
-                        Intelligent assistive system using real-time sensors and
-                        adaptive control logic to support individuals with autism
-                        in controlled environments.
-                    </p>
-                    <a href="projects.html#project2" class="link-arrow">
-                        View full project →
-                    </a>
-                </div>
-
-                <div class="project-card">
-                    <h3>Large-Scale Home Automation System</h3>
-                    <p>
-                        Scalable smart-home architecture featuring distributed IoT nodes,
-                        automated control, monitoring dashboards, and cloud integration.
-                    </p>
-                    <a href="projects.html#project3" class="link-arrow">
-                        View full project →
-                    </a>
-                </div>
-
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h3>Focus Area</h3>
+              <p>
+                IoT Systems<br />
+                Embedded Design<br />
+                Edge ML
+              </p>
             </div>
-        </div>
-    </section>
 
-    <!-- ================= FOOTER ================= -->
-    <footer>
-        <div class="container">
+            <div class="details-container">
+              <h3>Education</h3>
+              <p>
+                BSc in IoT & Robotics Engineering<br />
+                Research-Oriented Curriculum
+              </p>
+            </div>
+          </div>
+
+          <div class="text-container">
             <p>
-                &copy; 2025 MD. Rakib Hassan Dipu. All rights reserved.
+              I design and build real-world IoT and embedded systems integrating
+              sensors, microcontrollers, machine learning, and cloud platforms.
+              My work focuses on healthcare automation, environmental monitoring,
+              and intelligent edge devices. I am actively seeking international
+              research, scholarship, and remote engineering opportunities.
             </p>
-            <div class="footer-links">
-                <a href="https://github.com/rakibdipu" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/rakibhassandipu" target="_blank">LinkedIn</a>
-                <a href="mailto:rakibdipu007@gmail.com">Email</a>
-            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="experience">
+      <p class="section__text__p1">Technical</p>
+      <h1 class="title">Skills</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Embedded & IoT</h2>
+            <div class="article-container">
+              <article><h3>ESP32 / Arduino</h3></article>
+              <article><h3>MQTT / I2C / SPI</h3></article>
+              <article><h3>Sensor Integration</h3></article>
+              <article><h3>PCB Prototyping</h3></article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Software & ML</h2>
+            <div class="article-container">
+              <article><h3>Python</h3></article>
+              <article><h3>C / C++</h3></article>
+              <article><h3>scikit-learn</h3></article>
+              <article><h3>Git & GitHub</h3></article>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <p class="section__text__p1">Featured</p>
+      <h1 class="title">Projects</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+          <div class="details-container color-container">
+            <h2 class="project-title">IoT-Based Patient Monitoring</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='projects.html'">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <h2 class="project-title">Adaptive IoT Environment for Autism</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='projects.html'">
+                Details
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact</h1>
+
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <p>
+            <a href="mailto:rakibdipu007@gmail.com">
+              rakibdipu007@gmail.com
+            </a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <p>
+            <a href="https://linkedin.com/in/rakibhassandipu">
+              LinkedIn Profile
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 MD. Rakib Hassan Dipu</p>
     </footer>
 
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
